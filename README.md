@@ -1,17 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Personal Portfolio Website
 
-Currently, two official plugins are available:
+A personal portfolio website built with React to showcase my projects, skills, and background as a Front-End Developer.  
+The main purpose of this project is job searching and presenting my work in a professional way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
+The portfolio introduces who I am, displays the projects I have worked on, and provides a way for visitors to contact me directly through the website.
 
-## React Compiler
+It is designed with a smooth and clean user experience in mind.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
+- About page introducing my background and skills
+- Projects page showcasing my work
+- Contact page for direct communication
+- Smooth and user-friendly UI
+- Multi-page navigation using React Router
 
-## Expanding the ESLint configuration
+## Technologies Used
+- React
+- JavaScript
+- React Router
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# My_Portfolio
+## Technical Highlights
+- Client-side routing with React Router
+- Component-based architecture
+- Clean and responsive UI
+- Third-party service integration for the contact form
+- Clear separation between pages and components
+
+## Challenges
+The biggest challenge in this project was designing a smooth, interactive, and visually appealing UI while keeping the experience simple and professional.
+
+## Project Purpose
+This project was built to support my job search and represent me as a Front-End Developer through a real-world React application.
+
+## How to Run the Project
+1. Install dependencies:
+   ```bash
+   npm install
