@@ -119,7 +119,7 @@ export const experiencesData = [
   {
     company: "SMART BLOCKS KNOOZ",
     role: "Customer Support",
-    period: "April 2023 to April 2025",
+    period: "May 2023 to September 2025",
     description: [
       "Provided customer support for a cryptocurrency exchange, optimizing queries via Freshdesk and Freshchat.",
       "Developed a knowledge base, reducing support requests and improving self-service.",
