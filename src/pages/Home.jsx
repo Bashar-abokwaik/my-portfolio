@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           <div className="home-buttons">
             <a
-              href="/public/Bashar_Abokwaik_CV.pdf"
+              href="/Bashar_Abokwaik_CV.pdf"
               download
               className="btn cv-btn"
             >

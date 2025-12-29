@@ -43,8 +43,9 @@ export default function ContactForm({ full = false }) {
       {full && (
         <div className="contact-intro">
           <p>
-            I’m always open to meaningful conversations — let’s build something
-            together!
+            Have a project in mind or a question you’d like to discuss? I enjoy
+            clear, thoughtful conversations and turning ideas into practical
+            solutions. Feel free to reach out — I’ll be happy to hear from you.
           </p>
           <form
             className="contact-form"
