@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 
 export default function TechBackground() {
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
 
@@ -25,12 +25,22 @@ export default function TechBackground() {
           move: {
             enable: true,
             speed: 1,
-          }
+          },
         },
         interactivity: {
-          events: { onHover: { enable: true, mode: "repulse" }},
-          modes: { repulse: { distance: 120 }}
-        }
+          events: { onHover: { enable: true, mode: "repulse" } },
+          modes: { repulse: { distance: 120 } },
+        },
+        responsive: [
+          {
+            maxWidth: 768,
+            options: {
+              particles: {
+                number: { value: 40 },
+              },
+            },
+          },
+        ],
       }}
     />
   );

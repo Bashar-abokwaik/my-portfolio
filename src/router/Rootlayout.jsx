@@ -11,8 +11,8 @@ export default function Rootlayout() {
       <Header />
       <Suspense fallback={<PageLoader />}>
         <Outlet />
-        <Footer />
       </Suspense>
+      <Footer />
     </>
   );
 }

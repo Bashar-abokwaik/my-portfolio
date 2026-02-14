@@ -149,6 +149,7 @@ body {
 .my-photo img {
   width: 50px;
   height: 50px;
+  object-fit: cover;
   border-radius: 50%;
   border: 2px solid #00ff55;
   box-shadow: 0 0 10px rgba(0, 255, 85, 0.5);
@@ -739,7 +740,7 @@ body {
 
 .exp-card.active .exp-details,
 .exp-card.active .exp-skills {
-  max-height: 500px;
+  max-height: 2000px;
   opacity: 1;
   padding-top: 10px;
 }
@@ -1090,7 +1091,7 @@ body {
 
 .project-name {
   padding: 18px 20px 10px 20px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #d4ff63;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -1102,7 +1103,7 @@ body {
   padding: 0 20px;
   flex-grow: 1;
   color: #cfcfcf;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   animation: fadeIn 0.8s ease-in;
 }
@@ -1256,7 +1257,7 @@ body {
 .project-description {
   margin: 15px 5px;
   line-height: 1.8;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ddd;
 }
 
@@ -1599,17 +1600,23 @@ body {
   }
 
   /* About / sections layout */
-  .about-main-section,
+  .about-main-section{
+    width: 100%;
+    padding: 40px 10px;
+  }
   .technical-journey,
   .previous-experience,
-  .what-i-bring {
-    max-width: 95%;
+  .what-i-bring,
+  .contact-about-section {
+    width: 95%;
     padding: 36px 10px;
+    margin: 0 auto;
   }
   .about-main-title,
   .technical-journey h2,
   .previous-experience h2,
-  .what-i-bring h2 {
+  .what-i-bring h2,
+  .contact-about-section h2 {
     font-size: 2rem;
   }
   .fragment-open,
@@ -1636,6 +1643,9 @@ body {
   .exp-details li {
     font-size: 1rem;
   }
+  .exp-hint {
+    font-size: 0.7rem;
+  }
 
   /* Goals */
   .goals-section {
@@ -1657,7 +1667,7 @@ body {
   .contact-section {
     margin: 60px auto 80px;
     padding: 30px;
-    max-width: 95%;
+    max-width: 100%;
   }
   .contact-form input,
   .contact-form textarea {
@@ -1931,10 +1941,10 @@ body {
     font-size: 0.9rem;
   }
   .exp-card .exp-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .exp-card span {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .exp-details li {
     font-size: 0.8rem;

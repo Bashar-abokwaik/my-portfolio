@@ -7,6 +7,7 @@ export default function ProjectCard({ project }) {
           src={project.coverImage}
           alt={project.name}
           className="project-cover"
+          loading="lazy"
         />
         <h3 className="project-name">{project.name}</h3>
         <p className="project-info">

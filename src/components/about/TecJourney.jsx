@@ -33,6 +33,7 @@ export default function TechnicalJourney() {
                   src={course.image}
                   alt={course.name}
                   className="course-img"
+                  loading="lazy"
                   onClick={(e) => {
                     e.stopPropagation();
                     openModal(course.image);

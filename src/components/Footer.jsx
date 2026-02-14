@@ -1,7 +1,13 @@
 export default function Footer() {
+
+    function year() {
+        const currentYear = new Date().getFullYear();
+        return currentYear;
+    }
+    
     return (    
         <footer className="footer">
-            <p>&copy; 2025 My Portfolio</p>
+            <p>&copy; {year()} My Portfolio</p>
         </footer>
     );
 }

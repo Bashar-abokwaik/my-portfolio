@@ -9,6 +9,18 @@ export default function ProjectDetails() {
   if (!project) {
     return <Navigate to="/404" replace />;
   }
+  
+// Function to split description into paragraphs if it's a string
+  function projectDescription(description) {
+    if (typeof description === "string") {
+      return description.split(".").map((para, index) => (
+        <p key={index} className="project-description">
+          {para.trim() && para.trim() + "."}
+        </p>
+      ));
+    }
+    return description;
+  }
 
   return (
     <div className="project-details-container">
@@ -20,7 +32,7 @@ export default function ProjectDetails() {
       <p className="project-info">{project.info}</p>
 
       <h2 className="section-title">Description</h2>
-      <p className="project-description">{project.description}</p>
+      {projectDescription(project.description)}
 
       <div className="project-links">
         <a href={project.liveDemo} target="_blank" className="btn-demo">

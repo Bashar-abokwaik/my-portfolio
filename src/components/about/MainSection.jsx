@@ -9,12 +9,14 @@ export default function MainSection() {
 
       <p className="style-element">&#60;p&#62;</p>
       <p className="about-main-text">
-        I’m a Frontend Developer passionate about creating clean and interactive
-        web applications.<br />
-        With a background in customer support, I honed
-        problem-solving, communication, and analytical skills — all of which I
-        now bring to every project I build.<br />
-        I transitioned to Frontend because I love coding and building experiences users enjoy.
+        Results-driven Frontend Developer with a strong focus on React and
+        modern web technologies. I build responsive, scalable, and user-centered
+        applications with clean architecture and optimized performance.
+        <br />
+        I thrive on solving real-world problems through intuitive UI design, efficient
+        state management, and reusable component structures. Committed to
+        continuous growth, I bring precision, consistency, and a product-focused
+        mindset to every project I develop.
       </p>
       <p className="style-element">&#60;/p&#62;</p>
 

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import myPhoto from "../assets/images/my_photo.png";
+import myPhoto from "../assets/images/my_photo.jpeg";
 import ImageModal from "./about/ImageModal";
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
     setOpen(false);
   };
 
-const openModal = (image) => setModalImage(image);
+  const openModal = (image) => setModalImage(image);
   const closeModal = () => setModalImage(null);
 
   return (

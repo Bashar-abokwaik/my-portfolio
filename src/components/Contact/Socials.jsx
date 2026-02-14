@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMailBulk, FaPhone } from "react-icons/fa";
 
 export default function Socials() {
   return (
@@ -19,6 +19,9 @@ export default function Socials() {
         rel="noopener noreferrer"
       >
         <FaGithub /> GitHub
+      </a>
+      <a href="tel:+962797995214">
+        <FaPhone /> Phone
       </a>
     </div>
   );
