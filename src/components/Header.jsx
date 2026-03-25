@@ -6,6 +6,7 @@ import ImageModal from "./about/ImageModal";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
+  // const location = useLocation();
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -15,14 +16,19 @@ export default function Header() {
     setOpen(false);
   };
 
-  const openModal = (image) => setModalImage(image);
+  const openModal = (image) =>
+    modalImage ? setModalImage(null) : setModalImage(image);
   const closeModal = () => setModalImage(null);
 
   return (
     <nav className="header">
       <div className="header-left">
         <div className="my-photo">
-          <img src={myPhoto} alt="Bashar Abokwaik" onClick={() => openModal(myPhoto)} />
+          <img
+            src={myPhoto}
+            alt="Bashar Abokwaik"
+            onClick={() => openModal(myPhoto)}
+          />
           <ImageModal image={modalImage} onClose={closeModal} />
         </div>
         <div className="logo">Bashar Abokwaik</div>
@@ -42,7 +48,10 @@ export default function Header() {
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
             end
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              setModalImage(null);
+            }}
           >
             Home
           </NavLink>
@@ -52,7 +61,10 @@ export default function Header() {
             to="/about"
             className={({ isActive }) => (isActive ? "active" : "")}
             end
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              setModalImage(null);
+            }}
           >
             About
           </NavLink>
@@ -62,7 +74,10 @@ export default function Header() {
             to="/projects"
             className={({ isActive }) => (isActive ? "active" : "")}
             end
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              setModalImage(null);
+            }}
           >
             Projects
           </NavLink>
@@ -72,7 +87,10 @@ export default function Header() {
             to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
             end
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              setModalImage(null);
+            }}
           >
             Contact
           </NavLink>

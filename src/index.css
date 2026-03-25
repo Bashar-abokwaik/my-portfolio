@@ -29,7 +29,9 @@
   font-size: 8rem;
   font-weight: 900;
   color: #00ff7b;
-  text-shadow: 0 0 20px rgba(0, 255, 120, 0.5), 0 0 40px rgba(0, 255, 120, 0.2);
+  text-shadow:
+    0 0 20px rgba(0, 255, 120, 0.5),
+    0 0 40px rgba(0, 255, 120, 0.2);
   letter-spacing: 5px;
   animation: popIn 0.7s ease-out;
 }
@@ -154,7 +156,9 @@ body {
   border: 2px solid #00ff55;
   box-shadow: 0 0 10px rgba(0, 255, 85, 0.5);
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   animation: popIn 0.8s ease-out;
 }
 .my-photo img:hover {
@@ -334,13 +338,15 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   animation: popIn 0.8s ease-out;
-  box-shadow: 0 4px 15px rgba(0, 255, 85, 0.4),
+  box-shadow:
+    0 4px 15px rgba(0, 255, 85, 0.4),
     0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .btn:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 255, 85, 0.6),
+  box-shadow:
+    0 6px 20px rgba(0, 255, 85, 0.6),
     0 6px 20px rgba(255, 215, 0, 0.6);
 }
 .btn:active {
@@ -376,7 +382,9 @@ body {
   margin: 0.5rem;
   width: 150px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   animation: slideUp 0.5s ease-out;
   animation-delay: 0.1s;
 }
@@ -633,6 +641,7 @@ body {
   justify-content: center;
   z-index: 500;
   animation: fadeIn 0.3s forwards;
+  cursor: pointer;
 }
 
 .modal-img {
@@ -729,7 +738,10 @@ body {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.35s ease, opacity 0.35s ease, padding-top 0.3s;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.35s ease,
+    padding-top 0.3s;
 }
 
 .exp-hint {
@@ -775,6 +787,7 @@ body {
    GOALS SECTION
 ========================= */
 .contact-about-section {
+  position: relative;
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -815,7 +828,10 @@ body {
   border-radius: 12px;
   border-left: 5px solid #ffdd57;
   box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border-left 0.3s;
   animation: slideInLeft 0.5s ease-out;
   cursor: pointer;
 }
@@ -882,7 +898,7 @@ body {
   font-weight: 700;
 }
 
-.contact-section p {
+.contact-section .contact-text {
   color: #cfcfcf;
   font-size: 1rem;
   margin: 30px 0;
@@ -900,13 +916,15 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   animation: popIn 0.8s ease-out;
-  box-shadow: 0 4px 15px rgba(0, 255, 85, 0.4),
+  box-shadow:
+    0 4px 15px rgba(0, 255, 85, 0.4),
     0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .contact-button:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 255, 85, 0.6),
+  box-shadow:
+    0 6px 20px rgba(0, 255, 85, 0.6),
     0 6px 20px rgba(255, 215, 0, 0.6);
 }
 
@@ -921,7 +939,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
 }
-.contact-intro p {
+.contact-intro .contact-text {
   font-size: 1rem;
   text-align: left;
   line-height: 1.6;
@@ -973,13 +991,15 @@ body {
   cursor: pointer;
   animation: popIn 0.8s ease-out;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 255, 85, 0.4),
+  box-shadow:
+    0 4px 15px rgba(0, 255, 85, 0.4),
     0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .contact-form button:hover {
   transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 6px 20px rgba(0, 255, 85, 0.6),
+  box-shadow:
+    0 6px 20px rgba(0, 255, 85, 0.6),
     0 6px 20px rgba(255, 215, 0, 0.6);
 }
 
@@ -993,16 +1013,36 @@ body {
   font-weight: 600;
   margin-top: 10px;
 }
+.contact-form input.invalid,
+.contact-form textarea.invalid {
+  border: 2px solid #ff6b6b;
+  animation: shake 0.2s ease;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-left: 16px;
+  margin-top: 4px;
+  animation: fadeIn 0.2s ease;
+}
 
 .status.success {
-  color: #00ff55;
-  margin-top: 10px;
+  color: #4caf50;
+  margin-top: 8px;
 }
 
 .status.error {
-  color: #ff5555;
-  margin-top: 10px;
+  color: #ff6b6b;
+  margin-top: 8px;
 }
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 
 /* Social Links */
 .socials {
@@ -1010,6 +1050,70 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+.phone-modal {
+  position: relative;
+  z-index: 1000;
+  backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+
+.phone-box {
+  background: #1e1e1e;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  min-width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: slideInDown 0.3s ease-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.phone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.phone-number {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.copy-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+}
+
+.copy-btn.copied {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: white;
 }
 
 .socials a {
@@ -1290,7 +1394,9 @@ body {
 .project-links a:hover {
   background: rgba(0, 255, 90, 0.2);
   transform: translateY(-4px);
-  box-shadow: 0 0 12px rgba(0, 255, 90, 0.35), 0 0 22px rgba(0, 255, 90, 0.15);
+  box-shadow:
+    0 0 12px rgba(0, 255, 90, 0.35),
+    0 0 22px rgba(0, 255, 90, 0.15);
   color: #c8ffd9;
 }
 
@@ -1306,6 +1412,20 @@ body {
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
   }
 }
 
@@ -1600,7 +1720,7 @@ body {
   }
 
   /* About / sections layout */
-  .about-main-section{
+  .about-main-section {
     width: 100%;
     padding: 40px 10px;
   }

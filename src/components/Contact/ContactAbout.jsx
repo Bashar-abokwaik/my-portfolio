@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ContactAbout() {
   return (
     <>
-      <p>
+      <p className="contact-text">
         I’m always open to meaningful conversations — let’s build something
         together!
       </p>
