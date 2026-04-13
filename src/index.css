@@ -366,7 +366,6 @@ body {
   font-size: 2rem;
   color: #d4ff63;
   margin: 60px auto;
-  animation: popIn 0.8s ease-out;
 }
 
 .skills-cards {
@@ -525,7 +524,6 @@ body {
   font-size: 2rem;
   color: #d4ff63;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  animation: popIn 0.8s ease-out;
 }
 
 .technical-journey p {
@@ -832,7 +830,6 @@ body {
     transform 0.3s,
     box-shadow 0.3s,
     border-left 0.3s;
-  animation: slideInLeft 0.5s ease-out;
   cursor: pointer;
 }
 
@@ -866,7 +863,6 @@ body {
   padding: 25px 20px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 0.5s ease-in-out;
 }
 
 /* =========================

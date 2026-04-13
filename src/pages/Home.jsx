@@ -4,6 +4,7 @@ import Skills from "../components/skills/Skills";
 import TechBackground from "../components/TechBackground";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import TypingText from "../components/TypingText";
+import Reveal from "../components/UI/Reveal";
 
 
 
