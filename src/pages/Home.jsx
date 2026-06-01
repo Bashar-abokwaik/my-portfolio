@@ -15,14 +15,14 @@ export default function Home() {
       <TechBackground />
       <section className="hero-section">
         <div className="hero-text">
-          <h1 className="home-title">Frontend Developer</h1>
+          <h1 className="home-title">Full Stack Developer</h1>
           <TypingText />
           <p className="home-description">
-            Turning ideas into interactive, clean, and scalable web interfaces.
+            From concept to deployment, building modern web applications that users enjoy and businesses rely on.
           </p>
           <div className="home-buttons">
             <a
-              href="/Bashar_Abokwaik_Frontend_React.pdf"
+              href="/Bashar-Abokwaik-FullStack-CV.pdf"
               download
               className="btn cv-btn"
             >

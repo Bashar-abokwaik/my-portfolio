@@ -1,14 +1,20 @@
 import reactImage from "../assets/images/courses/React - The Complete Guide 2025 incl. Next.js, Redux.jpg";
 import mckinseyImage from "../assets/images/courses/Screenshot 2025-11-30 125731.png";
+import nodeImage from "../assets/images/courses/nodejs-course.jpg";
+
 import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
   FaReact,
+  FaRoute,
   FaGitAlt,
   FaGithub,
   FaBootstrap,
   FaJira,
+  FaNodeJs,
+  FaServer,
+  FaDatabase,
 } from "react-icons/fa";
 
 import {
@@ -17,6 +23,10 @@ import {
   SiRedux,
   SiNextdotjs,
   SiFirebase,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+  SiGraphql,
 } from "react-icons/si";
 
 function generateId() {
@@ -36,7 +46,14 @@ export const skillsData = [
   { skill: "React", icon: FaReact, id: generateId() },
   { skill: "Next.js", icon: SiNextdotjs, id: generateId() },
   { skill: "Redux Toolkit", icon: SiRedux, id: generateId() },
-  { skill: "React Router", icon: FaReact, id: generateId() },
+  { skill: "React Router", icon: FaRoute, id: generateId() },
+
+  { skill: "Node.js", icon: FaNodeJs, id: generateId() },
+  { skill: "Express.js", icon: SiExpress, id: generateId() },
+  { skill: "RESTful APIs", icon: FaServer, id: generateId() },
+  { skill: "GraphQL", icon: SiGraphql, id: generateId() },
+  { skill: "MongoDB", icon: SiMongodb, id: generateId() },
+  { skill: "MySQL", icon: FaDatabase, id: generateId() },
 
   { skill: "Tailwind CSS", icon: SiTailwindcss, id: generateId() },
   { skill: "Bootstrap", icon: FaBootstrap, id: generateId() },
@@ -44,13 +61,15 @@ export const skillsData = [
   { skill: "GitHub", icon: FaGithub, id: generateId() },
   { skill: "Firebase", icon: SiFirebase, id: generateId() },
   { skill: "Jira", icon: FaJira, id: generateId() },
+  { skill: "Postman", icon: SiPostman, id: generateId() },
 ];
+
 export const words = [
-  "creative solutions",
-  "interactive apps",
+  "modern web apps",
+  "secure backends",
+  "responsive interfaces",
+  "scalable systems",
   "clean code",
-  "efficient interfaces",
-  "React & JS magic",
 ];
 
 export const bringSkills = [
@@ -59,10 +78,8 @@ export const bringSkills = [
   "User-focused thinking",
   "Clear & effective communication",
   "Attention to detail",
-  "Fast learner & adaptable"
-]
-
-
+  "Fast learner & adaptable",
+];
 
 export const courses = [
   {
@@ -81,6 +98,24 @@ export const courses = [
       "API integration & async data",
       "Global state (Redux basics)",
       "Clean & maintainable React code",
+    ],
+  },
+  {
+    id: generateId(),
+    name: "Node.js – The Complete Guide (Udemy)",
+    info: "A comprehensive backend development course covering Node.js, Express.js, MongoDB, REST APIs, authentication, MVC architecture, SQL databases, GraphQL, testing, and deployment through real-world projects.",
+    image: nodeImage,
+    Skills: [
+      "Node.js & Express.js",
+      "RESTful API development",
+      "MongoDB & Mongoose",
+      "SQL & MySQL basics",
+      "MVC architecture",
+      "Authentication & authorization",
+      "Sessions & cookies",
+      "GraphQL APIs",
+      "Testing & debugging",
+      "Deployment & production workflows",
     ],
   },
   {
@@ -116,7 +151,7 @@ export const experiencesData = [
       "JSX",
       "Components",
       "State Management",
-      "Frontend Development"
+      "Frontend Development",
     ],
   },
   {
@@ -130,7 +165,7 @@ export const experiencesData = [
       "Addressed 15+ critical issues from 50+ beta users in 3 months, enhancing platform stability.",
       "Built and structured chatbot workflows to guide users effectively and improve engagement.",
       "Automated KYC processes for 50+ users, cutting manual tracking time by 40% through new systems in a 3-month period.",
-      "Spearheaded testing and rollout of 8+ new platform features, reducing post-launch bug reports."
+      "Spearheaded testing and rollout of 8+ new platform features, reducing post-launch bug reports.",
     ],
     skills: [
       "Blockchain",
@@ -195,4 +230,3 @@ export const goals = [
       "Begin learning the MERN stack (MongoDB, Express, React, Node.js) to understand backend fundamentals, build full-stack applications, and broaden my capabilities as a well-rounded developer.",
   },
 ];
-

@@ -48,7 +48,6 @@ export default function ContactForm({ full = false }) {
   const handleSendEmail = (e) => {
     e.preventDefault();
 
-    // تحقق كامل قبل الإرسال
     const newErrors = {
       user_name: validateField("user_name", values.user_name),
       user_email: validateField("user_email", values.user_email),
@@ -58,8 +57,7 @@ export default function ContactForm({ full = false }) {
     setErrors(newErrors);
     setTouched({ user_name: true, user_email: true, message: true });
 
-    if (Object.values(newErrors).some((err) => err)) return; // إذا فيه error توقف
-
+    if (Object.values(newErrors).some((err) => err)) return; 
     setStatus("sending");
 
     emailjs

@@ -39,9 +39,39 @@ import TicTacToe_3 from "../assets/images/projects/Tic_Tic_toe/TicTacToeImage3.p
 import TicTacToe_4 from "../assets/images/projects/Tic_Tic_toe/TicTacToeImage4.png";
 import TicTacToe_5 from "../assets/images/projects/Tic_Tic_toe/TicTacToeImage5.png";
 
+// Shop MVC Images
+import ShopCoverImage from "../assets/images/projects/Full_Stack_Shop/FullStackShopCover.png";
+import ShopImage1 from "../assets/images/projects/Full_Stack_Shop/FullStackShop1.png";
+import ShopImage2 from "../assets/images/projects/Full_Stack_Shop/FullStackShop2.png";
+import ShopImage3 from "../assets/images/projects/Full_Stack_Shop/FullStackShop3.png";
+import ShopImage4 from "../assets/images/projects/Full_Stack_Shop/FullStackShop4.png";
+import ShopImage5 from "../assets/images/projects/Full_Stack_Shop/FullStackShop5.png";
+import ShopImage6 from "../assets/images/projects/Full_Stack_Shop/FullStackShop6.png";
 export const projects = [
   {
     id: 1,
+    name: "Full Stack Shop (MVC E-commerce App)",
+    info: "A full-stack e-commerce application built with Node.js, Express, and MongoDB following MVC architecture, featuring authentication, product management, and server-side rendering.",
+    description: `Engineered a full-stack e-commerce application using Node.js, Express.js, and MongoDB, implementing MVC architecture for clean and scalable code structure.
+Developed RESTful backend APIs with authentication, session management, and secure user login system.
+Integrated MongoDB using Mongoose for efficient data modeling and product/user management.
+Built dynamic server-side rendered views using EJS, improving performance and SEO compared to client-side rendering.
+Implemented file upload functionality, input validation, and error handling to ensure production-ready application stability.`,
+    coverImage: ShopCoverImage,
+    images: [
+      ShopCoverImage,
+      ShopImage1,
+      ShopImage2,
+      ShopImage3,
+      ShopImage4,
+      ShopImage5,
+      ShopImage6,
+    ],
+    liveDemo: "https://shop-mvc.onrender.com/",
+    repoLink: "https://github.com/Bashar-abokwaik/shop-MVC",
+  },
+  {
+    id: 2,
     name: "Tic Tac Toe",
     info: "A classic Tic-Tac-Toe game built with React, featuring a clean UI and smooth state handling. Designed to highlight my understanding of component structure, event handling, and game logic.",
     description: `Engineered a Tic-Tac-Toe game using React, showcasing mastery of state management, props usage, and conditional rendering for enhanced user experience.
@@ -55,7 +85,7 @@ Developed win/tie detection and dynamic board updates, improving user interactio
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Food Order App",
     info: "A complete food ordering application that simulates a real-world user experience from browsing meals to placing an order.",
     description: `Engineered a single-page React food-ordering app, enhancing user experience by streamlining meal browsing, cart management, and order placement processes.
@@ -77,7 +107,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Task Management System",
     info: "A clean and efficient task management application built with React and Tailwind CSS, focused on productivity, clarity, and real-world workflow simulation.",
     description: `Engineered a React application, enabling project and task management, boosting user productivity by an estimated 35%.
@@ -98,7 +128,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Gym Landing Page",
     info: "A responsive and visually engaging landing page for a gym, built with React and styled using regular CSS. Includes hero banner, services, and contact sections.",
     description:
@@ -110,7 +140,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Hangman Game",
     info: "A fully interactive Hangman game built with Vanilla JavaScript, HTML, and CSS, featuring live word generation and wrong-letter tracking.",
     description:

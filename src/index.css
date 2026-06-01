@@ -412,7 +412,7 @@ body {
 ========================= */
 
 .about-main-section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   animation: fadeIn 1.5s ease-in;
   margin: 0 auto;
 }
@@ -460,7 +460,7 @@ body {
 }
 
 .what-i-bring {
-  padding: 80px 0;
+  padding: 60px 0;
   text-align: center;
   color: #fff;
   max-width: 80%;
@@ -511,7 +511,7 @@ body {
 .technical-journey {
   padding: 60px 20px;
   width: 80%;
-  max-width: 900px;
+  max-width: 1250px;
   margin: 0 auto;
   color: #d4d4d4;
   background: rgba(0, 0, 0, 0);
@@ -553,6 +553,7 @@ body {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 300px;
+  max-width: 400px;
   position: relative;
 }
 
