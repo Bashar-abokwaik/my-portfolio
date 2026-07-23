@@ -1,5 +1,25 @@
 // src/data/projects.js
 
+// NovaStyle Images
+import NovaStyleCover from "../assets/images/projects/NovaStyle/NovaStyleCover.png";
+import NovaStyle1 from "../assets/images/projects/NovaStyle/NovaStyleImage1.png";
+import NovaStyle2 from "../assets/images/projects/NovaStyle/NovaStyleImage2.png";
+import NovaStyle3 from "../assets/images/projects/NovaStyle/NovaStyleImage3.png";
+import NovaStyle4 from "../assets/images/projects/NovaStyle/NovaStyleImage4.png";
+import NovaStyle5 from "../assets/images/projects/NovaStyle/NovaStyleImage5.png";
+import NovaStyle6 from "../assets/images/projects/NovaStyle/NovaStyleImage6.png";
+import NovaStyle7 from "../assets/images/projects/NovaStyle/NovaStyleImage7.png";
+import NovaStyle8 from "../assets/images/projects/NovaStyle/NovaStyleImage8.png";
+import NovaStyle9 from "../assets/images/projects/NovaStyle/NovaStyleImage9.png";
+import NovaStyle10 from "../assets/images/projects/NovaStyle/NovaStyleImage10.png";
+import NovaStyle11 from "../assets/images/projects/NovaStyle/NovaStyleImage11.png";
+import NovaStyle12 from "../assets/images/projects/NovaStyle/NovaStyleImage12.png";
+import NovaStyle13 from "../assets/images/projects/NovaStyle/NovaStyleImage13.png";
+import NovaStyle14 from "../assets/images/projects/NovaStyle/NovaStyleImage14.png";
+import NovaStyle15 from "../assets/images/projects/NovaStyle/NovaStyleImage15.png";
+import NovaStyle16 from "../assets/images/projects/NovaStyle/NovaStyleImage16.png";
+import NovaStyle17 from "../assets/images/projects/NovaStyle/NovaStyleImage17.png";
+
 // Hangman Game Images
 import HangmanCover from "../assets/images/projects/Hangman_Game/HangmanGameCaver.png";
 import Hangman_1 from "../assets/images/projects/Hangman_Game/HangmanGameImage1.png";
@@ -50,6 +70,49 @@ import ShopImage6 from "../assets/images/projects/Full_Stack_Shop/FullStackShop6
 export const projects = [
   {
     id: 1,
+    name: "NovaStyle - Full Stack E-Commerce Platform",
+    info: "A production-ready full stack e-commerce platform featuring a customer storefront, admin dashboard, secure authentication, inventory management, order processing, and a modern landing page.",
+    description: `Engineered a complete full-stack e-commerce platform consisting of three independent applications: a customer storefront, an admin dashboard, and a marketing landing page built with Nextjs.
+Developed the storefront and admin dashboard using React, TypeScript, Redux Toolkit, React Query, CSS Modules, and implemented a fully responsive dark/light theme.
+Built a secure RESTful API using Expressjs, MongoDB, Mongoose, JWT Authentication, and Role-Based Authorization for customers and administrators.
+Implemented a complete shopping workflow including product browsing, categories, collections, search, filtering, sorting, shopping cart, checkout, order history, order cancellation, inventory management, and automatic stock synchronization.
+Designed and developed a complete Admin Dashboard featuring dashboard analytics, product management, category management, collection management, user management, order management, inventory management, and protected admin routes.
+Implemented authentication features including email verification (OTP), password reset via email, bcrypt password hashing, secure JWT authentication, protected routes, rate limiting, express-validator request validation, and CORS configuration.
+Optimized performance using React Lazy Loading, React Query server-state caching, reusable component architecture, pagination for users/products/orders, and environment-based configuration.
+Deployed the customer storefront and landing page using Firebase Hosting, while deploying the backend API using Render.`,
+    demo: {
+      CustomerStore: "https://novastyle-store.web.app/",
+      Admin: {
+        email: "admin@novastyle.com",
+        password: "Admin1##"
+      }
+    },
+    coverImage: NovaStyleCover,
+    images: [
+      NovaStyleCover,
+      NovaStyle1,
+      NovaStyle2,
+      NovaStyle3,
+      NovaStyle4,
+      NovaStyle5,
+      NovaStyle6,
+      NovaStyle7,
+      NovaStyle8,
+      NovaStyle9,
+      NovaStyle10,
+      NovaStyle11,
+      NovaStyle12,
+      NovaStyle13,
+      NovaStyle14,
+      NovaStyle15,
+      NovaStyle16,
+      NovaStyle17,
+    ],
+    liveDemo: "https://novastyle-home.web.app/",
+    repoLink: "https://github.com/Bashar-abokwaik/novastyle",
+  },
+  {
+    id: 2,
     name: "Full Stack Shop (MVC E-commerce App)",
     info: "A full-stack e-commerce application built with Node.js, Express, and MongoDB following MVC architecture, featuring authentication, product management, and server-side rendering.",
     description: `Engineered a full-stack e-commerce application using Node.js, Express.js, and MongoDB, implementing MVC architecture for clean and scalable code structure.
@@ -71,7 +134,7 @@ Implemented file upload functionality, input validation, and error handling to e
     repoLink: "https://github.com/Bashar-abokwaik/shop-MVC",
   },
   {
-    id: 2,
+    id: 3,
     name: "Tic Tac Toe",
     info: "A classic Tic-Tac-Toe game built with React, featuring a clean UI and smooth state handling. Designed to highlight my understanding of component structure, event handling, and game logic.",
     description: `Engineered a Tic-Tac-Toe game using React, showcasing mastery of state management, props usage, and conditional rendering for enhanced user experience.
@@ -85,7 +148,7 @@ Developed win/tie detection and dynamic board updates, improving user interactio
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Food Order App",
     info: "A complete food ordering application that simulates a real-world user experience from browsing meals to placing an order.",
     description: `Engineered a single-page React food-ordering app, enhancing user experience by streamlining meal browsing, cart management, and order placement processes.
@@ -107,7 +170,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Task Management System",
     info: "A clean and efficient task management application built with React and Tailwind CSS, focused on productivity, clarity, and real-world workflow simulation.",
     description: `Engineered a React application, enabling project and task management, boosting user productivity by an estimated 35%.
@@ -128,7 +191,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Gym Landing Page",
     info: "A responsive and visually engaging landing page for a gym, built with React and styled using regular CSS. Includes hero banner, services, and contact sections.",
     description:
@@ -140,7 +203,7 @@ Improved cart management by implementing the Context API, reducing state update 
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Hangman Game",
     info: "A fully interactive Hangman game built with Vanilla JavaScript, HTML, and CSS, featuring live word generation and wrong-letter tracking.",
     description:

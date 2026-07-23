@@ -1269,6 +1269,35 @@ button:disabled {
   animation: popIn 0.8s ease-out;
 }
 
+.project-demo {
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.project-demo p {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.project-demo a, .project-demo span {
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background: linear-gradient(45deg, #00ff55, #ffd700);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: popIn 0.8s ease-out;
+  box-shadow:
+    0 4px 15px rgba(0, 255, 85, 0.4),
+    0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
 /* =========================
    Modern Slider
 ========================= */
